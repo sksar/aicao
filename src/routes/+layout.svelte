@@ -1,5 +1,6 @@
 <script>
 	import "../app.pcss";
+    import Preview from "$lib/components/Preview.svelte";
 </script>
 
 
@@ -19,3 +20,5 @@
 <div class="container pt-4">
 	<slot />
 </div>
+
+<Preview />

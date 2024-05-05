@@ -2,6 +2,8 @@
     import * as Select from "$lib/components/ui/select/index.js";
     import {Button} from "$lib/components/ui/button";
     import Download from "svelte-radix/Download.svelte";
+    import File from "svelte-radix/File.svelte";
+
     import * as Table from "$lib/components/ui/table/index.js";
     import {Input} from "$lib/components/ui/input/index.js";
     import pb from "$lib/pb"
@@ -30,6 +32,11 @@
         });
         console.log(PDFs);
     }
+
+    function previewFile(PDF) {
+		const url = pb.files.getUrl(PDF, PDF.file)
+		window['preview'](url);
+	}
 
     function downloadFile(PDF) {
         const url = pb.files.getUrl(PDF, PDF.file)
@@ -70,7 +77,7 @@
 					<Table.Head>Title</Table.Head>
 					<Table.Head>Doc No.</Table.Head>
 					<Table.Head>Date</Table.Head>
-					<Table.Head class="text-center">Download</Table.Head>
+					<Table.Head class="text-center">View / Download</Table.Head>
 				</Table.Row>
 			</Table.Header>
 			<Table.Body>
@@ -81,7 +88,10 @@
 						<Table.Cell class="font-mono">{PDF['docno'] || "-"}</Table.Cell>
 						<Table.Cell>{formatDate(PDF['docdate'])}</Table.Cell>
 						<Table.Cell class="text-center">
-							<Button variant="outline" size="icon" on:click={downloadFile(PDF)}>
+							<Button variant="outline" size="sm" on:click={() => previewFile(PDF)}>
+								<File class="h-4 w-4" />
+							</Button>
+							<Button variant="outline" size="sm" on:click={() => downloadFile(PDF)}>
 								<Download class="h-4 w-4" />
 							</Button>
 						</Table.Cell>

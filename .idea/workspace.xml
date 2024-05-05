@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bad40d4-04d9-4d26-b64a-1fb910fc9f0e" name="Changes" comment="Updates">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/Preview.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/PDF-Search.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/PDF-Search.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +22,7 @@
         <option value="PDF-Search" />
         <option value="JavaScript File" />
         <option value="YearSelector" />
+        <option value="Preview" />
       </list>
     </option>
   </component>
@@ -41,7 +45,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2fpH8XICtN1hDW2eHxeeaksfuHQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -90,7 +96,7 @@
       <workItem from="1714659114891" duration="613000" />
       <workItem from="1714660501772" duration="14000" />
       <workItem from="1714660529134" duration="15000" />
-      <workItem from="1714886224992" duration="6035000" />
+      <workItem from="1714886224992" duration="6933000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -124,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714892265860</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1714892336851</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714892336851</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

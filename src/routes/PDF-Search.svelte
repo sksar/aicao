@@ -66,7 +66,6 @@
 		<Table.Root>
 			<Table.Header>
 				<Table.Row>
-					<Table.Head>Type</Table.Head>
 					<Table.Head>Year</Table.Head>
 					<Table.Head>Title</Table.Head>
 					<Table.Head>Doc No.</Table.Head>
@@ -77,7 +76,6 @@
 			<Table.Body>
 				{#each PDFs as PDF}
 					<Table.Row>
-						<Table.Cell class="font-medium">{selectedType.label}</Table.Cell>
 						<Table.Cell class="font-mono">{PDF.year}</Table.Cell>
 						<Table.Cell>{PDF.title}</Table.Cell>
 						<Table.Cell class="font-mono">{PDF['docno'] || "-"}</Table.Cell>

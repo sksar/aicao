@@ -1,8 +1,7 @@
 <script>
 	import "../app.pcss";
-    import Preview from "$lib/components/Preview.svelte";
+	import Preview from "$lib/components/Preview.svelte";
 </script>
-
 
 <header class="py-3 border-b">
 	<div class="container flex gap-2 items-center justify-between">
@@ -10,7 +9,7 @@
 		<nav>
 			<ul class="flex gap-2">
 				<li><a href="/">Home</a></li>
-				<li><a href="/">About</a></li>
+				<li><a href="/">Association</a></li>
 				<li><a href="/">Contact</a></li>
 			</ul>
 		</nav>

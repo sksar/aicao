@@ -10,7 +10,7 @@
 			<ul class="flex gap-2">
 				<li><a href="/">Home</a></li>
 				<li><a href="/">Association</a></li>
-				<li><a href="/">Contact</a></li>
+				<li><a href="/association">Contact</a></li>
 			</ul>
 		</nav>
 	</div>

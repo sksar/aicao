@@ -17,9 +17,9 @@
 
     let PDFs = [];
 
-    $: getPDFS(selectedType, searchTerm);
+    $: getPDFs(selectedType, searchTerm);
 
-    async function getPDFS() {
+    async function getPDFs() {
         if (!selectedType) return;
         const type = selectedType.value;
         if (String(searchTerm).length < 2) return;
@@ -30,6 +30,16 @@
         });
         console.log(PDFs);
     }
+
+    function downloadFile(PDF) {
+        const url = pb.files.getUrl(PDF, PDF.file)
+        const a = document.createElement('a');
+        a.href = url + '?download=1';
+        a.download = PDF.file;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+	}
 </script>
 
 
@@ -73,7 +83,7 @@
 						<Table.Cell class="font-mono">{PDF['docno'] || "-"}</Table.Cell>
 						<Table.Cell>{formatDate(PDF['docdate'])}</Table.Cell>
 						<Table.Cell class="text-center">
-							<Button variant="outline" size="icon">
+							<Button variant="outline" size="icon" on:click={downloadFile(PDF)}>
 								<Download class="h-4 w-4" />
 							</Button>
 						</Table.Cell>

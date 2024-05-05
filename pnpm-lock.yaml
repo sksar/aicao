@@ -35,6 +35,9 @@ importers:
       paneforge:
         specifier: ^0.0.4
         version: 0.0.4(svelte@4.2.15)
+      pocketbase:
+        specifier: ^0.21.2
+        version: 0.21.2
       svelte-radix:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.15)
@@ -1045,6 +1048,9 @@ packages:
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
+
+  pocketbase@0.21.2:
+    resolution: {integrity: sha512-XZdgU9dEv3TPjexDRHy5feYrZrJhWqxTki8ClFGpsnC51G3Qkwoa/U7CVG72jYcLDP3p0HiEhRUUevnlryWkHA==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -2233,6 +2239,8 @@ snapshots:
   pify@2.3.0: {}
 
   pirates@4.0.6: {}
+
+  pocketbase@0.21.2: {}
 
   postcss-import@15.1.0(postcss@8.4.38):
     dependencies:

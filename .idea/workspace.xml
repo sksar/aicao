@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bad40d4-04d9-4d26-b64a-1fb910fc9f0e" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9bad40d4-04d9-4d26-b64a-1fb910fc9f0e" name="Changes" comment="Build settings">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/YearSelector.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/pb.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/PDF-Search.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/PDF-Search.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
         <option value="PDF-Search" />
+        <option value="JavaScript File" />
+        <option value="YearSelector" />
       </list>
     </option>
   </component>
@@ -95,7 +96,7 @@
       <workItem from="1714659114891" duration="613000" />
       <workItem from="1714660501772" duration="14000" />
       <workItem from="1714660529134" duration="15000" />
-      <workItem from="1714886224992" duration="461000" />
+      <workItem from="1714886224992" duration="5107000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -105,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714886435879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Build settings">
+      <option name="closed" value="true" />
+      <created>1714886773208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714886773208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Build settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build settings" />
   </component>
 </project>

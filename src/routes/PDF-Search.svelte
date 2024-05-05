@@ -1,61 +1,86 @@
 <script>
-    import * as Tabs from "$lib/components/ui/tabs";
-    import * as Resizable from "$lib/components/ui/resizable";
+    import * as Select from "$lib/components/ui/select/index.js";
     import {Button} from "$lib/components/ui/button";
-
-    import {PaperPlane, DoubleArrowUp} from "svelte-radix";
+    import Download from "svelte-radix/Download.svelte";
+    import * as Table from "$lib/components/ui/table/index.js";
+    import {Input} from "$lib/components/ui/input/index.js";
+    import pb from "$lib/pb"
+    import {formatDate} from "$lib";
 
     const MENU = [
-        { label: "Transfer Orders", collection: "transfer-orders", icon: PaperPlane },
-        { label: "Promotion Orders", collection: "promotion-orders", icon: DoubleArrowUp },
-        { label: "MACP Orders", collection: "macp-orders"}
+        {label: "Transfer Orders", type: "transfer-order"},
+        {label: "Promotion Orders", type: "promotion-order"}
     ]
 
-	let selectedMenuItem = MENU[0].collection;
-    let selectedYearItem = new Date().getFullYear();
+    let selectedType = null;
+    let searchTerm = "";
 
-    let PDFS = [];
+    let PDFs = [];
+
+    $: getPDFS(selectedType, searchTerm);
+
+    async function getPDFS() {
+        if (!selectedType) return;
+        const type = selectedType.value;
+        if (String(searchTerm).length < 2) return;
+        PDFs = [];
+        PDFs = await pb.collection('documents').getFullList({
+            sort: '-year',
+            filter: `doctype = '${type}' && (year ?~ '${searchTerm}' || title ?~ '${searchTerm}')`
+        });
+        console.log(PDFs);
+    }
 </script>
 
 
-<Resizable.PaneGroup direction="horizontal" class="min-h-[500px] rounded-lg border mt-8">
+<div class="mt-8 flex gap-2">
+	<Select.Root bind:selected={selectedType}>
+		<Select.Trigger class="w-[250px]">
+			<Select.Value placeholder="Select type"/>
+		</Select.Trigger>
+		<Select.Content>
+			<Select.Group>
+				<Select.Label>Document Type</Select.Label>
+				{#each MENU as item}
+					<Select.Item value={item.type} label={item.label}>{item.label}</Select.Item>
+				{/each}
+			</Select.Group>
+		</Select.Content>
+		<Select.Input name="favoriteFruit"/>
+	</Select.Root>
+	<Input type="search" placeholder="Search (min 2 characters)" class="max-w-full" bind:value={searchTerm}/>
+</div>
 
-	<!--	MENU	-->
-	<Resizable.Pane defaultSize={20} minSize={20} maxSize={20}>
-		<div class="h-10 flex items-center justify-center px-4 border-b text-xs font-medium">
-			Circulars
-		</div>
-		<div class="px-4 py-6 flex flex-col gap-2">
-			{#each MENU as item}
-				<Button href="#" variant={selectedMenuItem === item.collection ? 'default':'ghost'}
-						on:click={() => selectedMenuItem = item.collection} size="sm"
-						class="w-full justify-start">
-					{#if item.icon}
-						<svelte:component this={item.icon} class="!w-4 !h-4 mr-2"/>
-					{:else}
-						<PaperPlane class="!w-4 !h-4 mr-2"/>
-					{/if}
-					{item.label}
-				</Button>
-			{/each}
-		</div>
-	</Resizable.Pane>
+<div class="results mt-4">
+	{#if PDFs.length}
+		<Table.Root>
+			<Table.Header>
+				<Table.Row>
+					<Table.Head>Type</Table.Head>
+					<Table.Head>Year</Table.Head>
+					<Table.Head>Title</Table.Head>
+					<Table.Head>Doc No.</Table.Head>
+					<Table.Head>Date</Table.Head>
+					<Table.Head class="text-center">Download</Table.Head>
+				</Table.Row>
+			</Table.Header>
+			<Table.Body>
+				{#each PDFs as PDF}
+					<Table.Row>
+						<Table.Cell class="font-medium">{selectedType.label}</Table.Cell>
+						<Table.Cell class="font-mono">{PDF.year}</Table.Cell>
+						<Table.Cell>{PDF.title}</Table.Cell>
+						<Table.Cell class="font-mono">{PDF['docno'] || "-"}</Table.Cell>
+						<Table.Cell>{formatDate(PDF['docdate'])}</Table.Cell>
+						<Table.Cell class="text-center">
+							<Button variant="outline" size="icon">
+								<Download class="h-4 w-4" />
+							</Button>
+						</Table.Cell>
+					</Table.Row>
+				{/each}
+			</Table.Body>
+		</Table.Root>
+	{/if}
+</div>
 
-	<Resizable.Handle/>
-
-	<!--	CONTENT	  	-->
-	<Resizable.Pane>
-		<div class="h-10 flex gap-1 items-center px-4 border-b font-medium">
-			<div>
-				{MENU.find(item => item.collection === selectedMenuItem).label}
-			</div>
-			of Year
-			<div>
-				2015
-			</div>
-		</div>
-		<div class="flex items-center justify-center p-6">
-			<span class="font-semibold">Content</span>
-		</div>
-	</Resizable.Pane>
-</Resizable.PaneGroup>

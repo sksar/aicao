@@ -8,5 +8,11 @@
 >
 	ALL INDIA CUSTOMS, CGST & DIRECTORATES CHIEF ACCOUNTS OFFICERS' ASSOCIATION
 </div>
-<h2 class="flex justify-center text-2xl">-: List of Documents :-</h2>
+<h2 class="flex justify-center text-2xl">List of Documents</h2>
 <PDF_Search />
+
+<style lang="postcss">
+	h2 {
+		@apply border-b-2 border-blue-300;
+	}
+</style>

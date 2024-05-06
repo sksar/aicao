@@ -5,9 +5,9 @@
     <h1 class="text-3xl font-bold my-5">Association</h1>
 </div>
 
-<h2>History of Association</h2>
-<br />
-<body>
+<div class="prose max-w-full">
+    <h2>History of Association</h2>
+
     <ul>
         <li>
             There was no association in the national level for ventilating the
@@ -19,7 +19,6 @@
             over the fact and urged that they should be accommodated in the home
             zone, even by temporary diversion of vacant posts of other zone.
         </li>
-        <br />
         <li>
             It is also felt that in absence of proper duty list, Chief Accounts
             Officers (CAOs) at different zones are tasked with the functions of
@@ -30,7 +29,6 @@
             of the Chief Commissioner Offices and Commissionerate Offices in the
             both formation of CGST & Customs.
         </li>
-        <br />
         <li>
             At the policy level, it was unequivocally felt that Chief Accounts
             Officers should get further financial up-gradation to Level-11
@@ -41,7 +39,6 @@
             same post whereas their juniors in the other cadre are getting the
             career progression.
         </li>
-        <br />
         <li>
             After a threadbare discussion in several meetings, it was felt that
             an organization be formed at the national level to ventilate the
@@ -52,66 +49,84 @@
             also not promote our common service interest. The need for a service
             association was thus felt necessary.
         </li>
-        <br />
         <li>
             Ultimately, it was unanimously decided to form an association namely
             “All India Customs, CGST and Directorates Chief Accounts Officers’
             Association” in the historically meeting (hybrid mode) of 9th April,
             2023 at Samrat Hotel, Chanakyapuri, New Delhi-110021 by the
             following Chief Accounts Officers (CAOs) : -
-            <p>1) Shri Tarun Kumar Seal, Delhi Customs Zone.</p>
-            <p>2) Shri Ashim Pramanick, Kolkata Customs Zone.</p>
-            <p>3) Shri Anindya Kr. Bagchi, Bhubeneswar CGST Zone.</p>
-            <p>4) Shri Prabash Chandra Jha, Ranch CGST Zone, Patna.</p>
-            <p>5) Shri Bhagwan Singh, Jaipur CGST Zone.</p>
-            <p>6) Shri Rajeev Ranjan Singh, Lucknow CGST Zone.</p>
-            <p>7) Smt. Anita Kumari, Delhi CGST Zone.</p>
-            <p>
-                8) Shri Pradyut Kumar Biswas, Amritsar Customs (Prv)
-                Commissionerate.
-            </p>
-            <p>9) Shri Narayan Chandra Das, Delhi Customs Zone.</p>
-            <p>10) Smt. Monalisa Biswas, Delhi Customs (Preventive) Zone.</p>
-            <p>11) Shri Debendra Nath Munda, Delhi Customs Zone.</p>
+            <ol>
+                <li>Shri Tarun Kumar Seal, Delhi Customs Zone.</li>
+                <li>Shri Ashim Pramanick, Kolkata Customs Zone.</li>
+                <li>Shri Anindya Kr. Bagchi, Bhubeneswar CGST Zone.</li>
+                <li>Shri Prabash Chandra Jha, Ranch CGST Zone, Patna.</li>
+                <li>Shri Bhagwan Singh, Jaipur CGST Zone.</li>
+                <li>Shri Rajeev Ranjan Singh, Lucknow CGST Zone.</li>
+                <li>Smt. Anita Kumari, Delhi CGST Zone.</li>
+                <li>
+                    Shri Pradyut Kumar Biswas, Amritsar Customs (Prv)
+                    Commissionerate.
+                </li>
+                <li>Shri Narayan Chandra Das, Delhi Customs Zone.</li>
+                <li>Smt. Monalisa Biswas, Delhi Customs (Preventive) Zone.</li>
+                <li>Shri Debendra Nath Munda, Delhi Customs Zone.</li>
+            </ol>
         </li>
-        <br />
+
         <li>
-            Besides the above, the following Chief Accounts Officers also
-            participated in the meeting through virtual mode :- 1) Smt. Bindu P,
-            CAO, Bangalore CGST Zone. 2) Smt. A. Brindah, CAO, Chennai Customs
-            Zone. 3) Shri M. V. Ramakrishna, CAO, Hyderabad CGST Zone. 4) Shri
-            Raghuveer, CAO, Hyderabad CGST Zone. 5) Smt. Shalini Umesh, CAO,
-            Chennai CGST Zone. 6) Smt. Sampat Rajakumari, CAO, Vishakapatnam
-            CGST Zone. 7) Smt. Suneetha Surendran, CAO, Chennai CGST Zone. 8)
-            Smt. Suneetah P.L. CAO, Thiruvantapuram CGST Zone. 9) Shri V. Sree
-            Nagesh, CAO, Hyderabad CGST Zone. 10) Shri Anindya Biswas, CAO,
-            Delhi Customs (Preventive) Zone. 11) Smt. Sridevi, CAO, Hyderabad
-            CGST Zone.
+            <b
+                >Besides the above, the following Chief Accounts Officers also
+                participated in the meeting through virtual mode</b
+            >
+            <ol>
+                <li>Smt. Bindu P, CAO, Bangalore CGST Zone.</li>
+                <li>Smt. A. Brindah, CAO, Chennai Customs Zone.</li>
+                <li>Shri M. V. Ramakrishna, CAO, Hyderabad CGST Zone.</li>
+                <li>Shri Raghuveer, CAO, Hyderabad CGST Zone.</li>
+                <li>Smt. Shalini Umesh, CAO, Chennai CGST Zone.</li>
+                <li>Smt. Sampat Rajakumari, CAO, Vishakapatnam CGST Zone.</li>
+                <li>Smt. Suneetha Surendran, CAO, Chennai CGST Zone.</li>
+                <li>Smt. Suneetah P.L. CAO, Thiruvantapuram CGST Zone.</li>
+                <li>Shri V. Sree Nagesh, CAO, Hyderabad CGST Zone.</li>
+                <li>
+                    Shri Anindya Biswas, CAO, Delhi Customs (Preventive) Zone.
+                </li>
+                <li>Smt. Sridevi, CAO, Hyderabad CGST Zone.</li>
+            </ol>
         </li>
-        <br />
         <li>
             Finally, this association has been recognized for a period of five
             (05) years w.e.f. 13.07.2023 as per the CCS (RSA) Rules, 1993 by the
             Central Board of Indirect Taxes and Customs (CBIC), Department of
             Revenue, Ministry of Finance, Government of India vide letter
-            <a href="/pdf/recognition-certificate.pdf" style="color:blue">
+            <a
+                href="https://cms.aicao.in/api/files/wibitekxf6rd9m8/sszjoj1c3ysxxov/recognition_certificate_HCK27nPZZ0.pdf"
+                style="color:blue"
+            >
                 F.No.B-12017/07/2023-AD-IVA/69956/2023 dated 14.07.2023.</a
             >
         </li>
     </ul>
-</body>
-
-<h2>Transfer and posting policy</h2>
-<br />
-Transfer/Posting Policy for Chief Accounts Officers under CGST/Directorates and Customs,
-CBIC issued by the Board under F.No. A-32012/06/2028-Ad.IIA dated 11-12-2019. To
-View the Transfer and posting policy please click
-<a href="/pdf/transfer-posting-policy.pdf" style="color:blue">here</a>
-<h2>Executive Committee</h2>
-<br />
+    <h2>Memorandum of Association</h2>
+    Memorandum of association for Group A General Central Service (Ministerial).
+    To View please click
+    <a
+        href="https://cms.aicao.in/api/files/wibitekxf6rd9m8/yezcq4k146pq8d5/memorandum_djrrqkBTpZ.pdf"
+        style="color:blue">here</a
+    >
+    <h2>Transfer and posting policy</h2>
+    Transfer/Posting Policy for Chief Accounts Officers under CGST/Directorates and
+    Customs, CBIC issued by the Board under F.No. A-32012/06/2028-Ad.IIA dated 11-12-2019.
+    To View the Transfer and posting policy please click
+    <a
+        href="https://cms.aicao.in/api/files/wibitekxf6rd9m8/vewj5znzmbptz6p/transfer_posting_policy_6vDP6YsCx4.pdf"
+        style="color:blue">here</a
+    >
+    <h2>Executive Committee</h2>
+</div>
 
 <style lang="postcss">
     h2 {
-        @apply text-xl font-medium border-b-2 border-blue-300 mt-4;
+        @apply border-b-2 border-blue-300;
     }
 </style>

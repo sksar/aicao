@@ -5,7 +5,7 @@
 <div
 	class="rounded-lg bg-zinc-300 w-full h-60 border border-dashed border-black flex items-center justify-center text-3xl"
 >
-	All India Customs & CGST Chief Accounts Officer's Association
+	ALL INDIA CUSTOMS, CGST & DIRECTORATES CHIEF ACCOUNTS OFFICERS' ASSOCIATION
 </div>
 
 <PDF_Search />

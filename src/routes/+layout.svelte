@@ -5,7 +5,7 @@
 
 <header class="py-3 border-b">
 	<div class="container flex gap-2 items-center justify-between">
-		<h1 class="text-2xl font-medium">AICCDCAOA</h1>
+		<h1 class="text-2xl font-medium">AICCDCAO</h1>
 		<nav>
 			<ul class="flex gap-2">
 				<li><a href="/">Home</a></li>

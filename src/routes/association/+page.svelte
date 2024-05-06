@@ -94,7 +94,9 @@
             (05) years w.e.f. 13.07.2023 as per the CCS (RSA) Rules, 1993 by the
             Central Board of Indirect Taxes and Customs (CBIC), Department of
             Revenue, Ministry of Finance, Government of India vide letter
-            F.No.B-12017/07/2023-AD-IVA/69956/2023 dated 14.07.2023.
+            <a href="/pdf/recognition-certificate.pdf" style="color:blue">
+                F.No.B-12017/07/2023-AD-IVA/69956/2023 dated 14.07.2023.</a
+            >
         </li>
     </ul>
 </body>
@@ -104,7 +106,7 @@
 Transfer/Posting Policy for Chief Accounts Officers under CGST/Directorates and Customs,
 CBIC issued by the Board under F.No. A-32012/06/2028-Ad.IIA dated 11-12-2019. To
 View the Transfer and posting policy please click
-<a href="/pdf/transfer-posting-policy.pdf">Here</a>
+<a href="/pdf/transfer-posting-policy.pdf" style="color:blue">here</a>
 <h2>Executive Committee</h2>
 <br />
 

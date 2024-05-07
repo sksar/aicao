@@ -14,6 +14,12 @@
 	const MENU = [
 		{ label: "Transfer Orders", type: "transfer-order" },
 		{ label: "Promotion Orders", type: "promotion-order" },
+		{ label: "Seniority List", type: "seniority-list" },
+		{ label: "Boards Letters", type: "boards-letter" },
+		{ label: "Misc. Orders", type: "misc-order" },
+		{ label: "Misc. Letters", type: "misc-letter" },
+		{ label: "Minutes Executive", type: "executive-minutes" },
+		{ label: "Minutes Regional", type: "regional-minutes" },
 	];
 
 	let selectedType = null;

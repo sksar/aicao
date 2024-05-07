@@ -18,7 +18,7 @@
 
 	let selectedType = null;
 	let searchTerm = "";
-	let perPage = 2;
+	let perPage = 10;
 	let page = 1;
 	let totalPages = 0;
 	let totalItems = 0;
